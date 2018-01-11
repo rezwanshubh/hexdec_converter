@@ -1,0 +1,7 @@
+D:\Git\.NET Projects\HexDec_Converter\bin\Debug\HexDec_Converter.exe.config
+D:\Git\.NET Projects\HexDec_Converter\bin\Debug\HexDec_Converter.exe
+D:\Git\.NET Projects\HexDec_Converter\bin\Debug\HexDec_Converter.pdb
+D:\Git\.NET Projects\HexDec_Converter\obj\Debug\HexDec_Converter.csprojResolveAssemblyReference.cache
+D:\Git\.NET Projects\HexDec_Converter\obj\Debug\HexDec_Converter.csproj.CoreCompileInputs.cache
+D:\Git\.NET Projects\HexDec_Converter\obj\Debug\HexDec_Converter.exe
+D:\Git\.NET Projects\HexDec_Converter\obj\Debug\HexDec_Converter.pdb
