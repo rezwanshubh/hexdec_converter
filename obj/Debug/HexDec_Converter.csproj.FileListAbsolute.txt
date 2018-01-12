@@ -5,3 +5,5 @@ D:\Git\.NET Projects\HexDec_Converter\obj\Debug\HexDec_Converter.csprojResolveAs
 D:\Git\.NET Projects\HexDec_Converter\obj\Debug\HexDec_Converter.csproj.CoreCompileInputs.cache
 D:\Git\.NET Projects\HexDec_Converter\obj\Debug\HexDec_Converter.exe
 D:\Git\.NET Projects\HexDec_Converter\obj\Debug\HexDec_Converter.pdb
+D:\Git\.NET Projects\HexDec_Converter\bin\Debug\Service.dll
+D:\Git\.NET Projects\HexDec_Converter\bin\Debug\Service.pdb

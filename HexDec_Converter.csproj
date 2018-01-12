@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsyncDemo.cs" />
     <Compile Include="ConverterData.cs" />
     <Compile Include="HexDec_Converter.cs" />
     <Compile Include="IInput.cs" />
@@ -55,6 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="in.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Service\Service.csproj">
+      <Project>{5198f2cc-2d36-4ac8-853d-5ef5bd74a1d7}</Project>
+      <Name>Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

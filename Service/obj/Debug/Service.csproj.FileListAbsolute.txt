@@ -1,0 +1,6 @@
+D:\Git\.NET Projects\HexDec_Converter\Service\bin\Debug\Service.dll
+D:\Git\.NET Projects\HexDec_Converter\Service\bin\Debug\Service.pdb
+D:\Git\.NET Projects\HexDec_Converter\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+D:\Git\.NET Projects\HexDec_Converter\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
+D:\Git\.NET Projects\HexDec_Converter\Service\obj\Debug\Service.dll
+D:\Git\.NET Projects\HexDec_Converter\Service\obj\Debug\Service.pdb

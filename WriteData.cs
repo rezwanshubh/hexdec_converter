@@ -29,9 +29,22 @@ namespace HexDec_Converter
 
         public string WriteInFile(string values, string filePath)
         {
-            File.WriteAllText(filePath, values);
+            throw new NotImplementedException();
+        }
 
-            return "done";
+        public async Task WriteInFile_Async(string values, string filePath)
+        {
+            UnicodeEncoding uniencoding = new UnicodeEncoding();
+
+            byte[] result = uniencoding.GetBytes(values);
+
+            using (FileStream SourceStream = File.Open(filePath, FileMode.OpenOrCreate))
+            {
+                SourceStream.Seek(0, SeekOrigin.End);
+                await SourceStream.WriteAsync(result, 0, result.Length);
+            }
+
+            Console.WriteLine("done");
         }
     }
 }

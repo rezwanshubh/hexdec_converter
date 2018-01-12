@@ -4,6 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Service;
+using Service.Impl;
 
 namespace HexDec_Converter
 {
@@ -13,23 +15,20 @@ namespace HexDec_Converter
         {
             try
             {
-                string[] seaparator = { " ",",", ";", "\r\n", "\r", "\n" };
 
-                Console.WriteLine("Please enter -o<file path> or values to convert");
+                string[] seaparator = { " ", ",", ";", "\r\n", "\r", "\n" };
+
+                Console.WriteLine("Please enter -i<file path> or values to convert");
                 string myInput = Console.ReadLine();
 
                 if (myInput.Trim().StartsWith("-i"))
                 {
                     myInput = myInput.Replace("-i", "");
-                    myInput = ReadData.GetReadData.ReadFromFile(myInput);
+                    myInput = FileServiceImpl.InsFileData.ReadOutFile(myInput);
                 }
-                else
-                {
-                    myInput = ReadData.GetReadData.ReadDirect(myInput);
-                }
-
-                //myInput = myInput.Replace(" ", "");
-                string[] inputNum = ConverterData.GetNumbers(myInput, seaparator);
+                
+                
+                string[] inputNum = InputModifierServiceImpl.GetNumbers(myInput, seaparator);
                 string finalOut = string.Empty;
 
                 foreach (var vari in inputNum)
@@ -39,11 +38,11 @@ namespace HexDec_Converter
                         string convertedResult = string.Empty;
                         if (vari.Trim().StartsWith("0x"))
                         {
-                            convertedResult = ConverterData.ConvertToDec(vari).ToString();
+                            convertedResult = ConverterServiceImpl.InsDataConverter.ConvertToDec(vari).ToString();
                         }
                         else
                         {
-                            convertedResult = ConverterData.ConvertToHex(vari).ToString();
+                            convertedResult = ConverterServiceImpl.InsDataConverter.ConvertToHex(vari).ToString();
                         }
 
                         if (finalOut != string.Empty)
@@ -64,7 +63,11 @@ namespace HexDec_Converter
                 if (consRead.Trim().StartsWith("-o"))
                 {
                     consRead = consRead.Replace("-o", "");
-                    Console.WriteLine(WriteData.GetWriteData.WriteInFile(finalOut, consRead));
+
+                    //WriteData.GetWriteData.WriteInFile_Async(finalOut, consRead);
+                    FileServiceImpl.InsFileData.WriteInFileAsync(finalOut, consRead);
+                    Console.WriteLine("Done asynchronously!");
+
                 }
                 else
                 {
@@ -72,13 +75,17 @@ namespace HexDec_Converter
                 }
 
                 Console.ReadKey();
+
+
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
-                throw;
+                Console.WriteLine(e.Message);
             }
 
+
         }
+
+        
     }
 }

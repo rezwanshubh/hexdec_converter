@@ -10,5 +10,6 @@ namespace HexDec_Converter
     {
         string WriteDirect(string values);
         string WriteInFile(string values, string filePath);
+        Task WriteInFile_Async(string values, string filePath);
     }
 }
