@@ -7,3 +7,12 @@ D:\Git\.NET Projects\HexDec_Converter\obj\Debug\HexDec_Converter.exe
 D:\Git\.NET Projects\HexDec_Converter\obj\Debug\HexDec_Converter.pdb
 D:\Git\.NET Projects\HexDec_Converter\bin\Debug\Service.dll
 D:\Git\.NET Projects\HexDec_Converter\bin\Debug\Service.pdb
+D:\Git\hexdec_converter\bin\Debug\HexDec_Converter.exe.config
+D:\Git\hexdec_converter\bin\Debug\HexDec_Converter.exe
+D:\Git\hexdec_converter\bin\Debug\HexDec_Converter.pdb
+D:\Git\hexdec_converter\bin\Debug\Service.dll
+D:\Git\hexdec_converter\bin\Debug\Service.pdb
+D:\Git\hexdec_converter\obj\Debug\HexDec_Converter.csprojResolveAssemblyReference.cache
+D:\Git\hexdec_converter\obj\Debug\HexDec_Converter.csproj.CoreCompileInputs.cache
+D:\Git\hexdec_converter\obj\Debug\HexDec_Converter.exe
+D:\Git\hexdec_converter\obj\Debug\HexDec_Converter.pdb
