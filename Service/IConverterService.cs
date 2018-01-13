@@ -9,6 +9,6 @@ namespace Service
     interface IConverterService
     {
         string ConvertToHex(string decValue);
-        decimal ConvertToDec(string hexValue);
+        string ConvertToDec(string hexValue);
     } 
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Service.Impl
@@ -20,14 +21,29 @@ namespace Service.Impl
             }
         }
 
-        public decimal ConvertToDec(string hexValue)
+        public string ConvertToDec(string hexValue)
         {
-            return Convert.ToInt32(hexValue, 16);
+            if (Regex.IsMatch(hexValue, @"0[xX][0-9a-fA-F]+"))
+            {
+                return Convert.ToInt32(hexValue, 16).ToString();
+            }
+            else
+            {
+                return "";
+            }
         }
 
         public string ConvertToHex(string decValue)
         {
-            return Convert.ToInt64(decValue).ToString("X");
+            if (Regex.IsMatch(decValue, @"[0-9]+(\.[0-9][0-9]?)?"))
+            {
+                return Convert.ToInt64(decValue).ToString("X");
+            }
+            else
+            {
+                return "";
+            }
+            
         }
     }
 }

@@ -16,7 +16,7 @@ namespace HexDec_Converter
             try
             {
 
-                string[] seaparator = { " ", ",", ";", "\r\n", "\r", "\n" };
+                string[] seaparator = {" ", ",", ";", "\r\n", "\r", "\n"};
 
                 Console.WriteLine("Please enter -i<file path> or values to convert");
                 string myInput = Console.ReadLine();
@@ -26,8 +26,8 @@ namespace HexDec_Converter
                     myInput = myInput.Replace("-i", "");
                     myInput = FileServiceImpl.InsFileData.ReadOutFile(myInput);
                 }
-                
-                
+
+
                 string[] inputNum = InputModifierServiceImpl.GetNumbers(myInput, seaparator);
                 string finalOut = string.Empty;
 
@@ -81,6 +81,10 @@ namespace HexDec_Converter
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                
             }
 
 

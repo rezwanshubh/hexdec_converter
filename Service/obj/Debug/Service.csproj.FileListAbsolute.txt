@@ -4,3 +4,9 @@ D:\Git\.NET Projects\HexDec_Converter\Service\obj\Debug\Service.csprojResolveAss
 D:\Git\.NET Projects\HexDec_Converter\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
 D:\Git\.NET Projects\HexDec_Converter\Service\obj\Debug\Service.dll
 D:\Git\.NET Projects\HexDec_Converter\Service\obj\Debug\Service.pdb
+D:\Git\hexdec_converter\Service\bin\Debug\Service.dll
+D:\Git\hexdec_converter\Service\bin\Debug\Service.pdb
+D:\Git\hexdec_converter\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+D:\Git\hexdec_converter\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
+D:\Git\hexdec_converter\Service\obj\Debug\Service.dll
+D:\Git\hexdec_converter\Service\obj\Debug\Service.pdb
